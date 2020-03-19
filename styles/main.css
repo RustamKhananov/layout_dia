@@ -212,9 +212,7 @@ h4 {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     outline: none; }
-    .nav__link:hover {
-      color: #ff9c8e; }
-    .nav__link:focus {
+    .nav__link:hover, .nav__link:focus {
       color: #ff9c8e; }
   .nav__item {
     margin-right: 64px;
@@ -512,7 +510,7 @@ h4 {
         bottom: 5%; } }
     @media screen and (min-width: 1650px) {
       .strategic-agency__slider {
-        left: calc((100vw - 1145px) / 2 + 1145px - 687px); } }
+        left: calc(50vw + 1145px / 2 - 687px); } }
     @media screen and (max-width: 1100px) {
       .strategic-agency__slider {
         position: relative;
@@ -563,12 +561,7 @@ h4 {
     transition: -webkit-transform 1s, -webkit-box-shadow 1s;
     transition: transform 1s, box-shadow 1s;
     transition: transform 1s, box-shadow 1s, -webkit-transform 1s, -webkit-box-shadow 1s; }
-    .card1__img:hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
-      -webkit-box-shadow: 0 0 10px 10px #008aff;
-              box-shadow: 0 0 10px 10px #008aff; }
-    .card1__img:focus {
+    .card1__img:hover, .card1__img:focus {
       -webkit-transform: scale(1.1);
               transform: scale(1.1);
       -webkit-box-shadow: 0 0 10px 10px #008aff;
@@ -630,8 +623,6 @@ h4 {
           box-sizing: border-box;
   -ms-flex-negative: 0;
       flex-shrink: 0; }
-  .card2 * {
-    outline: none; }
   .card2__num {
     margin-bottom: 24px;
     width: 46px;
@@ -667,11 +658,9 @@ h4 {
     -webkit-transition: -webkit-transform 1s;
     transition: -webkit-transform 1s;
     transition: transform 1s;
-    transition: transform 1s, -webkit-transform 1s; }
-    .card2__link:hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
-    .card2__link:focus {
+    transition: transform 1s, -webkit-transform 1s;
+    outline: none; }
+    .card2__link:hover, .card2__link:focus {
       -webkit-transform: scale(1.1);
               transform: scale(1.1); }
   .card2__label {
@@ -687,13 +676,9 @@ h4 {
     -webkit-transition: -webkit-transform 1s, -webkit-box-shadow 1s;
     transition: -webkit-transform 1s, -webkit-box-shadow 1s;
     transition: transform 1s, box-shadow 1s;
-    transition: transform 1s, box-shadow 1s, -webkit-transform 1s, -webkit-box-shadow 1s; }
-    .card2__label:hover {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2);
-      -webkit-box-shadow: 0 0 10px 10px rgba(238, 130, 238, 0.2);
-              box-shadow: 0 0 10px 10px rgba(238, 130, 238, 0.2); }
-    .card2__label:focus {
+    transition: transform 1s, box-shadow 1s, -webkit-transform 1s, -webkit-box-shadow 1s;
+    outline: none; }
+    .card2__label:hover, .card2__label:focus {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
       -webkit-box-shadow: 0 0 10px 10px rgba(238, 130, 238, 0.2);
@@ -861,7 +846,7 @@ h4 {
         margin-bottom: 0; } }
     @media screen and (max-width: 402px) {
       .approach__article {
-        width: calc(100% - 40px);
+        width: calc(100vw - 40px);
         margin: 204px auto 0; } }
   .approach__container {
     display: -webkit-box;
@@ -896,7 +881,7 @@ h4 {
     background-size: cover; }
     @media screen and (min-width: 1650px) {
       .approach__photo {
-        left: calc((100vw - 1145px) / 2 + 1145px - 687px - 7.5vw); } }
+        left: calc(50vw + 1145px / 2 - 687px - 7.5vw); } }
     @media screen and (max-width: 1330px) {
       .approach__photo {
         width: calc(80vw - 362px);
@@ -1041,9 +1026,7 @@ h4 {
     letter-spacing: 3px;
     color: #c0cdd7;
     margin-top: 4px; }
-  .card3:hover .card3__top-oval {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+  .card3:hover .card3__top-oval,
   .card3:hover .card3__bottom-oval {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg); }
@@ -1317,9 +1300,7 @@ h4 {
     margin-right: 40px;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s; }
-    .contact__soc:hover {
-      opacity: 0.5; }
-    .contact__soc:focus {
+    .contact__soc:hover, .contact__soc:focus {
       opacity: 0.5; }
   .contact__button {
     margin-top: 80px;
@@ -1335,9 +1316,7 @@ h4 {
     line-height: 1.5em;
     -webkit-transition: opacity 0.5s;
     transition: opacity 0.5s; }
-    .contact__phone:hover {
-      opacity: 0.5; }
-    .contact__phone:focus {
+    .contact__phone:hover, .contact__phone:focus {
       opacity: 0.5; }
   .contact__adress {
     font-family: "Open sans", sans-serif;
